@@ -1,56 +1,113 @@
-# MANZAR - Premium IPTV Player
+# 📺 MANZAR - Premium IPTV Player
 
-A modern, feature-rich IPTV player built with Flutter, designed for a premium user experience with high-performance state management.
+[![Flutter Version](https://img.shields.io/badge/Flutter-3.9.2-blue.svg)](https://flutter.dev)
+[![GetX State Management](https://img.shields.io/badge/State-GetX-purple.svg)](https://pub.dev/packages/get)
+[![Platform](https://img.shields.io/badge/Platform-Android%20%7C%20iOS%20%7C%20Windows-lightgrey.svg)](#)
 
-## Screenshots
+**MANZAR** is a high-performance, open-source IPTV player built with Flutter. It offers a premium, modern UI/UX designed for seamless live streaming, playlist management, and channel discovery. Powered by the reactive **GetX** framework, MANZAR ensures lightning-fast performance and a butter-smooth user experience.
+
+---
+
+## 📸 Screenshots
 
 <div align="center">
   <table>
     <tr>
-      <td align="center"><b>Home Dashboard</b></td>
-      <td align="center"><b>Live Playback</b></td>
-      <td align="center"><b>Categories</b></td>
+      <td align="center"><b>🏠 Home Dashboard</b></td>
+      <td align="center"><b>🎬 Live Playback</b></td>
+      <td align="center"><b>📂 Categories</b></td>
     </tr>
     <tr>
-      <td><img src="assets/screenshots/home_screen.png" width="250"></td>
-      <td><img src="assets/screenshots/video_player.png" width="250"></td>
-      <td><img src="assets/screenshots/groups_screen.png" width="250"></td>
+      <td><img src="assets/screenshots/home_screen.png" width="280"></td>
+      <td><img src="assets/screenshots/video_player.png" width="280"></td>
+      <td><img src="assets/screenshots/groups_screen.png" width="280"></td>
     </tr>
   </table>
 </div>
 
-## Features
+---
 
-- **Modern UI/UX**: Sleek dark theme, high-quality animations, and intuitive navigation.
-- **Playlist Management**: Support for M3U playlists via URL with lightning-fast parsing.
-- **Public Playlists**: Built-in access to curated public playlists (Global TV, Movies, Series, Sports, and Region-specific content).
-- **Advanced State Management**: Powered by GetX for reactive updates and efficient memory management.
-- **Channel Organization**: Group channels by category, instant search, and a personal Favorites list.
-- **Video Playback**: Premium playback experience using Chewie with aspect ratio controls and custom headers.
-- **Viewing History**: Automatically tracks recently watched channels for quick access.
-- **Settings**: Comprehensive data management to clear history, favorites, or cached data.
+## ✨ Key Features
 
-## Getting Started
+- 🎨 **Premium Aesthetic**: Modern dark-themed interface with smooth transitions and glassmorphism elements.
+- 🚀 **Reactive Core**: Entirely built on **GetX** for high-speed state management and efficient memory usage.
+- 📊 **Smart Playlist Parsing**: Supports `.m3u` and `.m3u8` formats with intelligent metadata extraction.
+- 🌍 **Curated Discovery**: Includes built-in access to globally curated public IPTV streams.
+- 🔍 **Global Search**: Find any channel instantly across all your playlists.
+- 📁 **Group Organization**: Automatically categorizes channels into groups (Movies, Sports, News, etc.).
+- ❤️ **Favorites & History**: Save your top channels and quickly resume where you left off.
+- 🎛️ **Advanced Controls**: Aspect ratio switching (16:9, 4:3, Actual), volume management, and custom headers for stream compatibility.
 
-1.  Clone the repository.
-2.  Install dependencies:
-    ```bash
-    flutter pub get
-    ```
-3.  Run the application:
-    ```bash
-    flutter run
-    ```
+---
 
-## Technology Stack
+## 🏗️ Project Architecture
 
-- **GetX**: High-performance, reactive state management and intelligent dependency injection.
-- **Chewie & Video Player**: Robust video playback engine with customizable controls.
-- **Shared Preferences**: Persistent local storage for playlists, favorites, and history.
-- **Google Fonts (Inter)**: Modern and clean typography.
-- **HTTP**: Reliable network communication for fetching remote playlists.
-- **UUID**: Unique identification for channels and playlists.
+MANZAR follows a clean **MVC-style pattern** powered by GetX:
 
-## Note
+```text
+lib/
+├── controllers/    # Business logic & State management (GetX)
+├── models/         # Data structures (Channel, Playlist)
+├── services/       # Network & API services (M3U Parsing)
+├── screens/        # UI Layers (Home, Player, Settings)
+├── utils/          # Constants, Themes & Helpers
+└── widgets/        # Reusable UI components
+```
 
-MANZAR is a media player application. It does not provide or include any media or content. Users must provide their own content (M3U playlists). The included public links are for demonstration and educational purposes only.
+---
+
+## 🛠️ Technology Stack
+
+| Library               | Purpose                                             |
+| :-------------------- | :-------------------------------------------------- |
+| **GetX**              | State Management, Navigation & Dependency Injection |
+| **Chewie**            | High-level Video Player Controller                  |
+| **Video Player**      | Low-level Video API                                 |
+| **HTTP**              | Remote Playlist Fetching                            |
+| **SharedPreferences** | Offline Persistent Storage                          |
+| **UUID**              | Unique Data Identification                          |
+| **Google Fonts**      | Premium Typography (Inter)                          |
+
+---
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) installed.
+- An IDE (VS Code, Android Studio) with Flutter extensions.
+
+### Installation Roadmap
+
+1. **Clone the Repo**
+
+   ```bash
+   git clone https://github.com/your-username/manzar_flutter.git
+   cd manzar_flutter
+   ```
+
+2. **Get Dependencies**
+
+   ```bash
+   flutter pub get
+   ```
+
+3. **Run for the first time**
+
+   ```bash
+   # For Android/iOS
+   flutter run
+
+   # For Windows
+   flutter run -d windows
+   ```
+
+---
+
+## 📜 Disclaimer
+
+**Disclaimer**: MANZAR is strictly a media player application. It **does not provide**, host, or include any media content, channels, or playlists of its own. Users are solely responsible for providing their own content (M3U playlists). The included public links are for demonstration purposes only.
+
+---
+
+<p align="center">Made with ❤️ for the Flutter Community</p>
