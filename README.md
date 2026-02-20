@@ -82,7 +82,7 @@ lib/
 1. **Clone the Repo**
 
    ```bash
-   git clone https://github.com/your-username/manzar_flutter.git
+   git clone https://github.com/asim1cva/manzar_flutter.git
    cd manzar_flutter
    ```
 
